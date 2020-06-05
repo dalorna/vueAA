@@ -1,0 +1,46 @@
+
+// SVG Icons Set
+img.icon {
+    vertical-align: middle;
+    line-height: auto;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+}
+
+i.icon {
+    vertical-align: middle;
+    line-height: auto;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+
+}
+
+i.status {
+    font-size: 0.75em;
+}
+
+.icon-image {
+
+    &.icon-xl {
+        height: 40px;
+        width: 40px;
+    }
+    &.icon-lg {
+        height: 32px;
+        width: 32px;
+    }
+    &.icon-md {
+        height: 24px;
+        width: 24px;
+    }
+    &.icon-sm {
+        height: 18px;
+        width:18px;
+    }
+    &.icon-xs {
+        height: 16px;
+        width:16px;
+    }
+}

@@ -1,0 +1,37 @@
+// Layout styles _layout.scss
+
+$Main-side-nav-width: 300px;
+$Main-side-nav-minimized-width: 44px;
+$Main-side-nav-minimized-width2: 44px;
+
+$Main-sub-nav-width: 350px;
+$Sub-nav-height: 45px;
+
+$Main-content-width: calc(100% - 300px - 350px - 10px - 10px - 10px);
+$Main-content-width-collapsed-nav: calc( 100% - 424px);
+$Main-content-full-width: calc( 100% - 300px - 10px - 10px);
+$Main-content-full-width-collapsed: calc( 100% - 44px - 10px - 10px);
+$Main-content-content-width: calc(100% - 300px);
+$Main-content-textarea-open-width: calc( 100% - 640px);
+$Main-content-textarea-closed-width: calc( 100% - 340px);
+$Main-content-textarea-closed2-width: calc( 100% - 340px);
+$Main-content-details-width: 300px;
+
+$Content-margin-top: 60px;
+$Content-nav-height: 60px ;
+$Content-table-height: calc( 100% - 94px);
+$Content-margin-top-small: 10px;
+$Content-header-height: 60px ;
+
+
+$Action-bar-height: 60px;
+$Action-bar-width: calc( 100% - 300px);
+$Action-bar-width-collapsed: calc( 100% - 44px);
+
+$Inbox-list-height: calc(100% - 20px - 60px);
+$Scheduler-height: calc(100% - 20px);
+
+$Plugin-width: 350px;
+
+$Border-radius: 10px;
+$Transition-speed: .3s ease all;

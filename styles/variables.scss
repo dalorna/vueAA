@@ -1,0 +1,94 @@
+$white:   #FFFFFF;
+$gray-lt: #E7E7E7;
+$platinum: #BDC0C2;
+$gray-md: #7A8084;
+$gray-dk: #444B4F;
+$gray-xlt: #f8f9fa ;
+$blue-lt: #1F8BD5;
+$blue-dk: #172751;
+$blue-xdk: #08173e;
+$red:     #ED2124;
+$red-light: lighten($red, 20%);
+$red-lighter: lighten($red, 40%);
+$orange: #FF6100;
+$green:   #3FAF49;
+$gold: #FFC702;
+
+// AA Color Pallete
+$apple: $red;
+// $orange: $orange;
+$lemon: $gold;
+$lime: $green;
+$grape: #7B5ACB;
+$potato: #7A4119;
+$vanilla: $white;
+$aluminum: $gray-lt;
+// $platinum: $platinum;
+$steel: $gray-md;
+$charcoal: $gray-dk;
+$pond: #03C0E6;
+$lake: $blue-lt;
+$ocean: #34699E;
+$ocean-deep: $blue-dk;
+
+// Set brand colors
+$primary: $blue-lt;
+$success: $green;
+$info: $blue-dk;
+$warning: $orange;
+$danger: $red;
+
+// Override fonts
+$font-family-sans-serif: 'Roboto', Arial, Helvetica sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+
+$Font-weight-normal: 400;
+$Font-weight-bold: 700;
+$Font-weight-extra-bold:800;
+$Font-size-xs:  11px;
+$Font-size-sm:  14px;
+$Font-size-md:  16px;
+$Font-size-lg:  18px;
+$Font-size-xl:  25px;
+$Font-size-xxl: 29px;
+
+
+
+$Border-radius: 10px;
+$Transition-speed: .3s ease all;
+
+// Layout Sizing Framework 
+$Main-side-nav-width: 300px;
+$Main-side-nav-minimized-width: 44px;
+$Main-side-nav-minimized-width2: 44px;
+$Main-sub-nav-width: 350px;
+$Main-content-width: calc(100% - 300px - 350px - 10px - 10px - 10px);
+$Main-content-width-collapsed-nav: calc( 100% - 424px);
+$Main-content-full-width: calc( 100% - 300px - 10px - 10px);
+$Main-content-full-width-collapsed: calc( 100% - 44px - 10px - 10px);
+$Main-content-content-width: calc(100% - 300px);
+$Main-content-textarea-open-width: calc( 100% - 640px);
+$Main-content-textarea-closed-width: calc( 100% - 340px);
+$Main-content-textarea-closed2-width: calc( 100% - 340px);
+$Main-content-details-width: 300px;
+$Content-margin-top: 60px;
+$Content-nav-height: 60px ;
+$Content-table-height: calc( 100% - 94px);
+$Content-margin-top-small: 10px;
+$Content-header-height: 60px ;
+$Sub-nav-height: 45px;
+
+$Action-bar-height: 60px;
+$Action-bar-width: calc( 100% - 300px);
+
+$Action-bar-width-collapsed: calc( 100% - 44px);
+$Inbox-list-height: calc(100% - 20px - 60px);
+$Scheduler-height: calc(100% - 20px);
+$Plugin-width: 350px;
+
+$Global-app-switcher-width: 60px;
+$Global-frame-header-height: 60px;
+
+$Panel-height: calc( 100vh - #{$Global-frame-header-height} - #{$Action-bar-height} - 15px);
+

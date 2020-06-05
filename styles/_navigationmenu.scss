@@ -1,0 +1,226 @@
+$menu-hover-color: #f4f6f9;
+
+#left-nav-menu {
+  height: 100%;
+  position: relative;
+
+  .side-nav-list-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 60px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: $Main-side-nav-width;
+
+    .side-nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      .category {
+        font-weight: 400;
+        position: relative;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        padding: 0 0px;
+        vertical-align: top;
+        color: $blue-lt;
+
+        .category-link {
+          cursor: pointer;
+          position: relative;
+          height: 40px;
+          margin-right: 40px;
+
+          .icon-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+            line-height: 20px;
+            width: 44px;
+            height: 40px;
+            padding: 5px 7px;
+            overflow: hidden;
+            text-align: center;
+
+            .icon-image {
+              width: 30px;
+              height: 30px;
+              padding: 2.5px;
+              display: inline-block;
+              vertical-align: text-top;
+            }
+          }
+
+          .category-name {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22px;
+            padding: 10px 0px 8px 0px;
+            margin-left: 44px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+
+        .category-accessory-btn {
+          float: right;
+          font-size: 20px;
+          line-height: 20px;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          overflow: hidden;
+          text-align: right;
+
+          .accessory-btn-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: text-top;
+          }
+        }
+
+        .content-row-unread-count {
+          position: absolute;
+          top: 2px;
+          left: 15px;
+          width: 30px;
+          height: 16px;
+          overflow: hidden;
+          vertical-align: top;
+          z-index: 1;
+          text-align: left;
+
+          .unread-badge {
+            background: $red;
+            color: $white;
+            padding: 1px 5px;
+            font-size: 10px;
+            line-height: 15px;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+          }
+        }
+
+        &.active {
+          background: $blue-lt;
+          color: white;
+
+          &:hover {
+            background: $blue-lt;
+          }
+        }
+
+        &:hover {
+          background: $menu-hover-color;
+        }
+      }
+
+      .subcategories {
+        font-weight: 400;
+        position: relative;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        padding-left: 0px;
+        vertical-align: top;
+        color: $gray-dk;
+
+        .subcategory-header {
+          color: #909090;
+          font-size: 13px;
+          padding-left: 44px;
+        }
+
+        .subcategory-list {
+          padding: 5px 0px;
+          list-style: none;
+
+          .subcategory-item {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 5px 0px;
+            padding-left: 44px;
+
+            &:hover {
+              background: $menu-hover-color;
+            }
+
+            &.active {
+              background: $gray-lt;
+              font-weight: 500;
+            }
+
+            &.has-unread {
+              font-weight: 500;
+            }
+
+            .subcategory-icon {
+              width: 15px;
+              height: 15px;
+              margin-right: 5px;
+              display: inline-block;
+              vertical-align: text-bottom;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+    text-align: left;
+    border-bottom: 1px solid $gray-lt;
+
+    .app-logo-text {
+      color: $blue-lt;
+      margin: 15px 7px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .app-logo-img {
+      height: 30px;
+      width: auto;
+      margin: 15px 7px;
+    }
+  }
+
+  &.side-nav-collapsed {
+    width: $Main-side-nav-minimized-width;
+    .side-nav-list-wrapper {
+      width: $Main-side-nav-minimized-width;
+      .side-nav-list {
+        .category {
+          .category-link {
+            .category-name {
+              display: none;
+            }
+          }
+          .category-accessory-btn {
+            display: none;
+          }
+        }
+        .subcategories {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

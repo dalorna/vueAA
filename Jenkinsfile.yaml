@@ -1,0 +1,38 @@
+---
+appName: pandohrui-web
+artifactsPerEnvironment: true
+autoDeploy:
+  dev: true
+  stage: true
+  prod: false
+build:
+  - call yarn install
+  - dev: call yarn run build:dev
+    stage: call yarn run build:stage
+    prod: call yarn run build:prod
+  - echo %date%.%time% > %WORKSPACE%\dist\_version.html
+  - git log -1 --pretty=format:"%%H" >> %WORKSPACE%\dist\_version.html
+aws:
+  region: us-east-1
+  cloudFront:
+    distributions:
+      dev: E2WODNK0Y3DYZY
+      stage: E1NI0VSL0JUKZB
+      prod: EWK1092XM0YHI
+  s3:
+    bucket:
+      dev: autoalert-dev-cloudfront
+      stage: autoalert-stage-cloudfront
+      prod: autoalert-prod-cloudfront
+environments:
+  default: dev
+  stage: stage
+  master: prod
+src:
+  deployRoot: C:\AutoAlert\deploy
+  workspaceRoot: C:\AutoAlert\workspace
+  sourceRoot: .
+dist:
+  - source: dist\
+    dest: .
+  - static\

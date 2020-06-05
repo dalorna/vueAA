@@ -1,0 +1,88 @@
+.panel-container {
+    display:flex;
+    align-items: stretch;
+    height: $Panel-height;
+    min-width: 750px;
+
+    .panel {
+      background-color:$white;
+      border-radius: $Border-radius;
+      box-shadow: 2px 2px 5px $gray-lt;
+      height: $Panel-height;
+      margin-top:0px;
+      margin-bottom:0px;
+      border: 1px hidden transparentize($gray-lt, 0.4 );
+      overflow:hidden;
+    }
+
+    &.single-panel {
+      .panel {
+        width:100%;
+        &:first-child {
+          margin-right:15px;
+          margin-left:15px;
+        } 
+      }
+    }
+    &.two-panel-3-7 {
+      .panel {
+        width:100%;
+        &:first-child {
+          margin-right:7.5px;
+          margin-left:15px;
+          width:350px;
+          min-width:350px;
+          max-width:350px;
+        }
+        &:nth-child(2) {
+          margin-right:15px;
+          margin-left:7.5px;
+        }
+      }
+    }
+    &.two-panel-3-7-tabs {
+      .panel {
+        &:first-child {
+          margin-right:7.5px;
+          margin-left:15px;
+          width:350px;
+          min-width:350px;
+          max-width:350px;
+        }
+        &:nth-child(2) {
+          border-radius: 0 0 $Border-radius $Border-radius;
+          margin-right:15px;
+          margin-left:7.5px;
+        }
+      }
+    }
+    
+    .panel-toolbar {
+      height: 59px;
+      vertical-align: middle;
+      padding-top:15px;
+      padding-right:15px;
+      padding-bottom:10px;
+      padding-left:15px;
+      color: $steel;
+    }
+
+    .panel-action-bar {
+      min-height: 44px;
+      vertical-align: middle;
+      color: $charcoal;
+      padding:5px;
+    }
+    
+    .panel-body {
+      overflow-y: scroll;
+      height: calc(100vh - 60px - 60px - 30px - 50px);
+      &.w-action-bar {
+        height: calc( #{$Panel-height} - 60px - 45px);
+      }
+    }
+
+  }
+
+
+  

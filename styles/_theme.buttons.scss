@@ -1,0 +1,175 @@
+
+/* Button Styles */
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #1f8bd5;
+    border: 2px solid #1f8bd5;
+}
+.btn-primary:hover {
+    background-color: #34699e;
+    border: 2px solid #34699e;
+}
+.btn-primary.apple {
+    background-color: #ed2124;
+    border: 2px solid #ed2124;
+}
+.btn-primary.apple:hover {
+    background-color: #b60000;
+    border: 2px solid #b60000;
+}
+.btn-primary.lime {
+    background-color: #3faf49;
+    border: 2px solid #3faf49;
+}
+.btn-primary.lime:hover {
+    background-color: #32803e;
+    border: 2px solid #32803e;
+}
+.btn-primary.disabled {
+    background-color: #bdc0c2;
+    border: 2px solid #bdc0c2;
+    cursor: not-allowed;
+}
+.btn-primary.disabled:hover {
+    background-color: #bdc0c2;
+    border: 2px solid #bdc0c2;
+    cursor: not-allowed;
+}
+.btn-outline {
+    color: #1f8bd5;
+    background: none;
+    border: 2px solid #1f8bd5;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,color .15s ease-in-out;
+}
+.btn-outline:hover {
+    color: #fff;
+    border: 2px solid #34699e;
+    background-color: #34699e;
+}
+.btn-outline.apple {
+    color: #ed2124;
+    border: 2px solid #ed2124;
+}
+.btn-outline.apple:hover {
+    color: #fff;
+    border: 2px solid #b60000;
+    background-color: #b60000;
+}
+.btn-outline.lime {
+    color: #3faf49;
+    border: 2px solid #3faf49;
+}
+.btn-outline.lime:hover {
+    color: #fff;
+    border: 2px solid #32803e;
+    background-color: #32803e;
+}
+.btn-outline.disabled {
+    color: #bdc0c2;
+    border: 2px solid #bdc0c2;
+    background: none;
+    cursor: not-allowed;
+}
+.btn-outline.disabled:hover {
+    color: #bdc0c2;
+    border: 2px solid #bdc0c2;
+    background: none;
+    cursor: not-allowed;
+}
+.btn-plaintext {
+    background: none;
+    color: #1f8bd5;
+    border: none;
+    transition: color .15s ease-in-out;
+}
+.btn-plaintext:hover {
+    color: #34699e;
+}
+.btn-plaintext.apple {
+    color: #ed2124;
+}
+.btn-plaintext.apple:hover {
+    color: #b60000;
+}
+.btn-plaintext.lime {
+    color: #3faf49;
+}
+.btn-plaintext.lime:hover {
+    color: #32803e;
+}
+.btn-plaintext.disabled {
+    color: #bdc0c2;
+    cursor: not-allowed;
+}
+.btn-plaintext.disabled:hover {
+    color: #bdc0c2;
+    cursor: not-allowed;
+}
+/* Radio and Check Groups */
+.btn-secondary {
+    color: #1f8bd5;
+    border-color: #1f8bd5;
+    background: none;
+}
+.btn-secondary:hover {
+    color: #34699e;
+    border-color: #34699e;
+    background: none;
+}
+.btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    border-color: #1f8bd5;
+    background: #1f8bd5;
+}
+/* End Radio and Check Groups */
+/* Wizard Button Group */
+.btn-primary.btn-wizard-delete {
+    color: #1f8bd5;
+    border: none;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    margin: 0;
+}
+.btn-primary.btn-wizard-delete:hover {
+    background: #e7e7e7;
+}
+.btn-primary.btn-wizard-save, .btn-primary.btn-wizard-saveasnew {
+    color: #fff;
+    border: none;
+    background: #1f8bd5;
+    border-radius: 0;
+    margin: 0;
+    margin-left: -1px;
+}
+.btn-primary.btn-wizard-save {
+    margin-left: -2px;
+}
+.btn-primary.btn-wizard-save:hover , .btn-primary.btn-wizard-saveasnew:hover {
+    background: #34699e;
+}
+.btn-primary.btn-wizard-approve {
+    color: #fff;
+    border: none;
+    background: #3faf49;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+    margin-left: -2px;
+}
+.btn-primary.btn-wizard-approve:hover {
+    background: #32803e;
+}
+.btn-primary.btn-wizard-approve img {
+    height: 14px;
+    margin-right: 5px;
+}
+.btn-primary.btn-wizard-save.disabled, .btn-primary.btn-wizard-saveasnew.disabled, .btn-primary.btn-wizard-approve.disabled, .btn-primary.btn-wizard-delete.disabled {
+    color: #fff;
+    background: #bdc0c2;
+    border: none;
+}
+/* End Wizard Button Group */
+/* End Button Styles */

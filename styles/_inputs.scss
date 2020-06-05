@@ -1,0 +1,30 @@
+
+input.form-control {
+    border-radius: 10px;
+    border: 1px solid $aluminum;
+    font-size:13px;
+}
+.input-icon-right {
+    position: relative;
+    input.form-control {
+        padding-right: 25px;
+    }
+    svg {
+        position:absolute;
+        z-index: 100;
+        right:12px;
+        top:9px;
+        // color:$blue-lt;
+    }
+
+    i {
+        position:absolute;
+        z-index: 100;
+        right:12px;
+        top:9px;
+        // color:$blue-lt;
+    }
+}
+input.form-control.danger {
+    border: 1px solid $danger;
+}

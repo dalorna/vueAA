@@ -1,0 +1,83 @@
+// Colors _colors.scss
+// Override / set color variables
+$white:   #FFFFFF;
+$vanilla: $white;
+
+$gray-lt: #E7E7E7;
+$aluminum: $gray-lt;
+
+$platinum: #BDC0C2;
+
+$gray-md: #7A8084;
+$steel: $gray-md;
+
+$gray-dk: #444B4F;
+$charcoal: $gray-dk;
+
+$blue-lt: #1F8BD5;
+$lake: $blue-lt;
+
+$pond: #03C0E6;
+
+$blue-dk: #172751;
+
+$ocean: #34699E;
+
+$blue-xdk: #08173e;
+
+$ocean-deep: $blue-dk;
+
+$red:     #ED2124;
+$apple: $red;
+$red-light: lighten($red, 20%);
+$red-lighter: lighten($red, 40%);
+
+$orange: #FF6100;
+
+$green:   #3FAF49;
+$lime: $green;
+
+$gold: #FFC702;
+$lemon: $gold;
+
+$grape: #7B5ACB;
+
+$potato: #7A4119;
+
+
+
+
+:root {
+    --blue: $primary;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+
+
+
+
+// Set brand colors
+$primary: $blue-lt;
+$success: $green;
+$info: $blue-dk;
+$warning: $orange;
+$danger: $red;

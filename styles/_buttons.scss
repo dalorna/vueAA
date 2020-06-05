@@ -1,0 +1,307 @@
+// Button Styles _buttons.scss
+
+$Button-border-radius: 10px;
+$hover-darken: 10%;
+$active-darken: 20%;
+
+/* Default button (medium) */
+.btn {
+    border-radius: $Button-border-radius;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 8px 14px 7px;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 5px !important;
+    background-color:$blue-lt;
+    color: $white;
+    border-width: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: none;
+
+    /* Begin button sizes */
+
+    &.btn-sm {
+        padding: 6px 12px 5px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &.btn-xs {
+        padding: 8px 8px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    &.btn-lg {
+        padding: 10px 18px 9px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    /* End button sizes */
+
+    /* Begin button colors */
+
+    &.btn-blue, &.btn-primary {
+        background-color: $blue-lt;
+        color: $white;
+    }
+
+    &.btn-default {
+        background-color: $white;
+        color: inherit;
+    }
+
+    &.btn-pond {
+        background-color: $pond;
+        color: inherit;
+    }
+
+    &.btn-blue-dark{
+        background-color: $blue-dk;
+        color: $white;
+    }
+
+    &.btn-red, &.btn-danger{
+        background-color: $red;
+        color: $white;
+    }
+
+    &.btn-green, &.btn-success{
+        background-color: $green;
+        color: $white;
+    }
+
+    &.btn-gold, &.btn-warning{
+        background-color: $gold;
+        color: $gray-md;
+    }
+
+    &.btn-gray{
+        background-color: $gray-md;
+        color: $white;
+    }
+
+    &.btn-gray-lt{
+        background-color: $gray-lt;
+        color: $gray-md;
+    }
+
+    &.btn-gray-xlt {
+        background-color:$gray-xlt;
+        color:$blue-lt;
+    }
+
+    &.btn-dark{
+        background-color: $gray-dk;
+        color: $white;
+    }
+
+    /* End button colors */
+
+    /* Begin button options */
+
+    &.flip-case{
+        text-transform: none;
+    }
+
+    &.btn-circle {
+        border-radius: 15px;
+
+        &.btn-sm {
+            border-radius: 13px;
+        }
+    
+        &.btn-xs {
+            border-radius: 11px;
+        }
+    
+        &.btn-lg {
+            border-radius: 19px;
+        }
+    }
+
+    &.btn-outline{
+        background-color: $white;
+        color: $blue-lt;
+
+        &.btn-blue, &.btn-primary{
+            background-color: $white;
+            color: $blue-lt;
+        }
+    
+        &.btn-blue-dark{
+            background-color: $white;
+            color: $blue-dk;
+        }
+    
+        &.btn-red, &.btn-danger{
+            background-color: $white;
+            color: $red;
+        }
+    
+        &.btn-green, &.btn-success{
+            background-color: $white;
+            color: $green;
+        }
+    
+        &.btn-gold, &.btn-warning{
+            background-color: $white;
+            color: $gold;
+        }
+    
+        &.btn-gray{
+            background-color: $white;
+            color: $gray-md;
+        }
+
+        &.btn-gray-lt{
+            background-color: $white;
+            color: $gray-md;
+        }
+    
+        &.btn-dark{
+            background-color: $white;
+            color: $gray-dk;
+        }
+    }
+
+    &.btn-block{
+        display: block;
+        width: 100%;
+    }
+
+    /* End button options */
+
+    /* Begin button states */
+
+    &:hover{
+        background-color: darken($blue-lt, $hover-darken);
+        color: $white;
+
+        &.btn-blue, &.btn-primary{
+            background-color: darken($blue-lt, $hover-darken);
+            color: $white;
+        }
+
+        &.btn-pond{
+            background-color: darken($pond, $hover-darken);
+            color: $white;
+        }
+    
+        &.btn-blue-dark{
+            background-color: darken($blue-dk, $hover-darken);
+            color: $white;
+        }
+    
+        &.btn-red, &.btn-danger{
+            background-color: darken($red, $hover-darken);
+            color: $white;
+        }
+    
+        &.btn-green, &.btn-success{
+            background-color: darken($green, $hover-darken);
+            color: $white;
+        }
+    
+        &.btn-gold, &.btn-warning{
+            background-color: darken($gold, $hover-darken);
+            color: $gray-md;
+        }
+    
+        &.btn-gray{
+            background-color: darken($gray-md, $hover-darken);
+            color: $white;
+        }
+
+        &.btn-gray-lt{
+            background-color: darken($gray-lt, $hover-darken);
+            color: $gray-md;
+        }
+
+        &.btn-gray-xlt {
+            background-color:$gray-lt;
+            color:$blue-lt;
+        }
+    
+        &.btn-dark{
+            background-color: darken($gray-dk, $hover-darken);
+            color: $white;
+        }
+    }
+
+    &:active{
+        background-color: darken($blue-lt, $active-darken);
+        color: $white;
+
+        &.btn-blue, &.btn-primary{
+            background-color: darken($blue-lt, $active-darken);
+            color: $white;
+        }
+    
+        &.btn-blue-dark{
+            background-color: darken($blue-dk, $active-darken);
+            color: $white;
+        }
+    
+        &.btn-red, &.btn-danger{
+            background-color: darken($red, $active-darken);
+            color: $white;
+        }
+    
+        &.btn-green, &.btn-success{
+            background-color: darken($green, $active-darken);
+            color: $white;
+        }
+    
+        &.btn-gold, &.btn-warning{
+            background-color: darken($gold, $active-darken);
+            color: $gray-md;
+        }
+    
+        &.btn-gray{
+            background-color: darken($gray-md, $active-darken);
+            color: $white;
+        }
+    
+        &.btn-dark{
+            background-color: darken($gray-dk, $active-darken);
+            color: $white;
+        }
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+    }
+
+    /* End button states */
+}
+
+.btn-group{
+    position: relative;
+    vertical-align: middle;
+
+    .btn{
+        margin: 0px !important;
+    }
+}
+
+.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+
+    .btn{
+        float: none;
+        display: table-cell;
+        width: 1%;
+    }
+}
+
+// New Diverse theme buttons using bootstrap 4 below
