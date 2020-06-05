@@ -138,6 +138,7 @@ const actions = {
     })
   },
   setCurrentUser: function (context, val) {
+    console.log(val);
     return new Promise((resolve, reject) => {
       context.commit('setCurrentUser', val);
       context.commit('setUser', val);
