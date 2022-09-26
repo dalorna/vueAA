@@ -21,7 +21,7 @@
     "font-awesome": "^4.7.0",
     "moment": "^2.22.2",
     "oidc-client": "^1.5.2",
-    "pubnub": "^4.21.2",
+    "pubnub": "^4.37.0",
     "vee-validate": "^2.0.9",
     "vue": "^2.5.16",
     "vue-infinite-loading": "^2.3.1",
